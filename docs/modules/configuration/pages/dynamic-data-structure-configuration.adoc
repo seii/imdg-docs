@@ -113,6 +113,8 @@ MapConfig sessionsWithoutBackup = new MapConfig("sessions").setBackupCount(0);
 instance.getConfig().addMapConfig(sessionsWithoutBackup);
 ----
 
+To ignore conflicts between dynamic configurations, set the xref:ROOT:system-properties.adoc#ignore-dynamic-conf-conflicts[`hazelcast.dynamicconfig.ignore.conflicts`] system property to `true`.
+
 == Dynamic Data Structure Configuration and User Customizations
 
 Dynamically added data structure configuration may reference
